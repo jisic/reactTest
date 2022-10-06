@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+
+.layout{
+  max-width: 1200px;
+  min-width: 800px;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.list-container {
+  padding: 0 24px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.list-wrapper{
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.todo-container {
+  width: 270px;
+  /* height: 150px; */
+  border: 4px solid teal;
+  border-radius: 12px;
+  padding: 12px 24px 24px 24px;
+}
+.add-form {
+  background-color: #eee;
+  border-radius: 12px;
+  margin: 0 auto;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  padding: 30px;
+  gap: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.add-input{ 
+  height: 40px;
+  width: 240px;
+  border: none;
+  border-radius: 12px;
+  padding: 0 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.form-label {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.add-input{ 
+  height: 40px;
+  width: 240px;
+  border: none;
+  border-radius: 12px;
+  padding: 0 12px;
+}
+
+
+.add-button {
+  border: none;
+  height: 40px;
+  border-radius: 10px;
+  background-color: teal;
+  width: 140px;
+  color: #fff;
+  font-weight: 700;
 }
